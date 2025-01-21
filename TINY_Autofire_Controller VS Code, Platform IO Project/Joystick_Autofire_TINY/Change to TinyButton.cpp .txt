@@ -1,0 +1,11 @@
+// Was a long button click recognized?
+// Value changed from 4000 to 1500 to validate a LONG press in a shorter time (approx 1.5 seconds)
+      
+
+FROM: 
+
+if ((currentMillis - _buttonPressTime) >= 4000) 
+
+TO:
+
+if ((currentMillis - _buttonPressTime) >= 1500)  
