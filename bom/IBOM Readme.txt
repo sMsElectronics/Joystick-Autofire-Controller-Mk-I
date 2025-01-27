@@ -1,0 +1,1 @@
+IBOM -- all resistors and capacitors are 0805 footprints and are not 0603 as shown in IBOM
