@@ -3,7 +3,7 @@
 
  ## *The complete and tested auto fire controller PCB's, complete with documentation, are available on my sMs Retro Electronics KoFi Shop*
 
-## [sMs Retro Electronics KoFi Store](https://ko-fi.com/smsretroelectronics)
+## [sMs Retro Electronics KoFi Shop](https://ko-fi.com/smsretroelectronics)
 
  ## Size of board compared to the end of a pen.  
 
@@ -14,42 +14,30 @@
 ![](media/pcb_top.png)
 
  ## PCB BOTTOM VIEW
-### A convenient silkscreen showing signal names
+### A convenient silkscreen showing signal names NOTE: SQUARE PIN = 1
 
 ![](media/pcb_BOT.png)
 
 # J2 Signal Definitions: 
 
-PIN NUMBER
-
-1) /FIRE OUT - Active low signal output that emulates the trigger 
-into the C64 or other computer to auto fire a weapon. This signal is normally HIGH. Signal wires to pin 6 of a joystick 
-
-2) FIRE_BUT. - Signal from fire control button on joystick. This signal
-pulls LOW each time the joystick fire button is pressed. This signal 
-is normally HIGH. 
-
-3) DIGRATESEL - Selects the auto fire rate. Rates of 5, 10 and
-20 PPS are selectable. A Quick press cycles theSE rates. A long press FOR 1.5+ seconds enables the analog rate control.   
-
-4) ANA_RATE - A 0-5 VDC input from external 10K potentiometer to vary the fire rate from 2 to 23 pulses per second. This potentiometer input is only active if the joystick is set to smooth analog fire control. 
-
-5) Fire LED- - output for user option to mount external led to indicate the press of the fire button in normal mode or to indicate auto fire pulsing in either of two auto fire modes. 
-
-6) VCC - supply for LED+. No limiting resistor is required
-
-7) DATA IN -  for external Neopixel RGB LED
-
-8) VCC - 5V supply for Neopixel
-
-9) GND -  Ground connection for Neopixel
+|Pin Number|Signal Name|Description|
+|:--:|:--:|:--|
+|1|/FIRE OUT|Active low signal output that emulates the trigger into the C64 or other computer to auto fire a weapon. This signal is normally HIGH. Signal wires to pin 6 of a joystick: 
+|2|FIRE_BUT|Signal from fire control button on joystick. This signal pulls LOW each time the joystick fire button is pressed. This signal is normally HIGH. :
+|3|DIGRATESEL|Selects the auto fire rate. Rates of 5, 10 and 20 PPS are selectable. A Quick press cycles theSE rates. A long press FOR 1.5+ seconds enables the analog rate control|   
+|4|ANA_RATE|A 0-5 VDC input from external 10K potentiometer to vary the fire rate from 2 to 23 pulses per second. This potentiometer input is only active if the joystick is set to smooth analog fire control|
+|5|Fire LED-|output for user option to mount external led to indicate the press of the fire button in normal mode or to indicate auto fire pulsing in either of two auto fire modes|
+|6|VCC|supply for LED+. No limiting resistor is required|
+|7|DATA IN|External Neopixel RGB LED Data IN Signal|
+|8|VCC|5V supply for Neopixel|
+|9|GND|Ground connection for Neopixel|
 
 # J1 Signal Definitions: 
 
-PIN NUMBER
-1)  5V IN
-
-2)  GROUND 
+|Pin Number|Signal Name|
+|:--:|:--|
+|1|5V IN|
+|2|GROUND| 
    
 # Summary of Modes
 
