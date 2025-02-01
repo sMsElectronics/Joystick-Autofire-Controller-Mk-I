@@ -66,3 +66,18 @@ The following diagram shows how to wire a Sanwah JLF-TP-8YT joystick , or compat
 ![](media/joystickwiring.png)
  
  
+## If you want to DIY build your boards, the source files are available in the VS Code folder. Just keep in mind that when you create the project, inside the "libdeps" folder that contains the Tinbutton folder and TinyButton.cpp file. This file has been modifed to work with this project with the following changes. It was found that a long button press of 4 seconds was way too long and the long press woul dbe activated in 1.5 seconds instead.    
+
+   ## Modification to file ***TinyButton.cpp*** to Shorten the LONG press criteria from 4 seconds to 1.5 seconds 
+   ### W.Manganaro 2025
+   
+## FROM:    
+
+      if ((currentMillis - _buttonPressTime) >= 4000)  
+## TO:    
+   
+
+      //Value changed from 4000 to 1500 to validate a LONG press in a shorter time (approx 1.5 seconds)
+      if ((currentMillis - _buttonPressTime) >= 1500) 
+
+ 
